@@ -4,7 +4,8 @@
   "description": "Lectures live code",
   "main": "index.js",
   "scripts": {
-    "start": "http-server"
+    "start": "http-server",
+    "build-css": "sass css/lists.scss css/lists.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/grunitech/lectures-examples/issues"
   },
-  "homepage": "https://github.com/grunitech/lectures-examples#readme"
+  "homepage": "https://github.com/grunitech/lectures-examples#readme",
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
 }

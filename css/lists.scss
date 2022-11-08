@@ -1,0 +1,72 @@
+/* c style comment */
+// c++ style comment
+
+// build this file using:
+// sass css/lists.scss css/output.css
+
+// importing colors variables
+@import "colors";
+
+
+// base selector
+body > ul {
+
+  border: 1px solid yellow;
+
+  // reference to the "ul"
+  &:hover {
+    background-color: $typography_main;
+  }
+
+  // continue with those selectors
+  > li > span {
+    color: blueviolet;
+
+    a {
+
+    }
+  }
+
+  > li:first-child {
+    font-weight: bold;
+  }
+}
+
+
+// pseudo elements with reference
+a {
+  color: blue;
+
+  &:hover {
+    color: red;
+  }
+}
+
+// calculation with CSS units
+p {
+  width: calc(100vw / 2);
+  background-color: $bg_main;
+
+}
+
+// this mixin will not be shown in the real CSS
+@mixin bordered {
+  border: 1px solid grey;
+  border-radius: 1em;
+}
+
+p {
+  @include bordered;
+  border-radius: 2em;
+}
+
+.main {
+  @include bordered;
+}
+
+
+// mixin with arguments
+@mixin coloredBorder($c: red) {
+  border: 1px solid $c;
+  border-radius: 1em;
+}

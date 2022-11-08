@@ -1,0 +1,38 @@
+/* c style comment */
+body > ul {
+  border: 1px solid yellow;
+}
+body > ul:hover {
+  background-color: black;
+}
+body > ul > li > span {
+  color: blueviolet;
+}
+body > ul > li:first-child {
+  font-weight: bold;
+}
+
+a {
+  color: blue;
+}
+a:hover {
+  color: red;
+}
+
+p {
+  width: 50vw;
+  background-color: yellow;
+}
+
+p {
+  border: 1px solid grey;
+  border-radius: 1em;
+  border-radius: 2em;
+}
+
+.main {
+  border: 1px solid grey;
+  border-radius: 1em;
+}
+
+/*# sourceMappingURL=output.css.map */
