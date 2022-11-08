@@ -1,4 +1,8 @@
 /* c style comment */
+.example {
+  font-family: monospace;
+}
+
 body > ul {
   border: 1px solid yellow;
 }
@@ -20,7 +24,7 @@ a:hover {
 }
 
 p {
-  width: 50vw;
+  width: calc(100vw - 200px);
   background-color: yellow;
 }
 
@@ -32,6 +36,16 @@ p {
 
 .main {
   border: 1px solid grey;
+  border-radius: 1em;
+}
+
+.classFoo {
+  border: 1px solid red;
+  border-radius: 1em;
+}
+
+.classBar {
+  border: 1px solid #00ff00;
   border-radius: 1em;
 }
 

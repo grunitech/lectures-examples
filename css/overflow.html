@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Overflow</title>
+    <meta charset="UTF-8">
+    <style>
+        .example {
+            background: lime;
+            width: 500px;
+            height: 100px;
+            /*white-space: nowrap;*/
+
+            /* scroll on any axis have overflow */
+            overflow: scroll;
+        }
+
+        .foo {
+            background: yellow;
+            height: 200px;
+            width: 200px;
+            overflow-y: hidden;
+
+        }
+        .bar {
+            background: #FF0000;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="example">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus tellus a sem hendrerit, eget tempor turpis aliquam. Curabitur sagittis lorem vel ex lobortis, nec viverra elit condimentum. Cras dapibus ipsum malesuada hendrerit lobortis. Integer varius, ex vitae semper viverra, nisl velit condimentum erat, rhoncus rutrum enim nisi vitae est. Proin efficitur ante mauris, fringilla pellentesque erat lobortis et. Integer quis ullamcorper nibh. Vestibulum molestie nulla nisi, at sagittis lectus sodales eu. Aliquam erat volutpat. Suspendisse accumsan gravida neque ac tincidunt. Vestibulum rutrum, libero quis luctus ornare, ipsum odio tristique eros, in pretium justo dui et nulla. Morbi quis justo id leo elementum congue. Integer elementum quis est non rutrum.
+</div>
+
+<div class="foo">
+    foo
+    <div class="bar">
+        bar
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus tellus a sem hendrerit, eget tempor turpis aliquam. Curabitur sagittis lorem vel ex lobortis, nec viverra elit condimentum. Cras dapibus ipsum malesuada hendrerit lobortis. Integer varius, ex vitae semper viverra, nisl velit condimentum erat, rhoncus rutrum enim nisi vitae est. Proin efficitur ante mauris, fringilla pellentesque erat lobortis et. Integer quis ullamcorper nibh. Vestibulum molestie nulla nisi, at sagittis lectus sodales eu. Aliquam erat volutpat. Suspendisse accumsan gravida neque ac tincidunt. Vestibulum rutrum, libero quis luctus ornare, ipsum odio tristique eros, in pretium justo dui et nulla. Morbi quis justo id leo elementum congue. Integer elementum quis est non rutrum.
+    </div>
+</div>
+</body>
+</html>

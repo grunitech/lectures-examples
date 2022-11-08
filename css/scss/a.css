@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+main {
+  height: calc(100vh - 100px);
+}
+
+a {
+  color: pink;
+}
+a:hover {
+  color: purple;
+}
+
+/*# sourceMappingURL=a.css.map */

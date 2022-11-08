@@ -4,10 +4,18 @@
 // build this file using:
 // sass css/lists.scss css/output.css
 
+
+// importing font face
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;;
+}
+
 // importing colors variables
 @import "colors";
-
-
+@import "just-another";
+// Nesting
 // base selector
 body > ul {
 
@@ -44,7 +52,7 @@ a {
 
 // calculation with CSS units
 p {
-  width: calc(100vw / 2);
+  width: calc(100vw - 200px);
   background-color: $bg_main;
 
 }
@@ -70,3 +78,14 @@ p {
   border: 1px solid $c;
   border-radius: 1em;
 }
+
+.classFoo {
+  // the border will be red
+  @include coloredBorder();
+}
+
+.classBar {
+  // the border will be green
+  @include coloredBorder(#00ff00);
+}
+

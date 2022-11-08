@@ -1,0 +1,20 @@
+// sass css/scss/aleph.scss css/scss/a.css
+$bg: black;
+$link: pink;
+$link_hovered: purple;
+
+body {
+  background-color: $bg;
+}
+
+main {
+  height: calc(100vh - 100px);
+}
+
+a {
+  color: $link;
+
+  &:hover {
+    color: $link_hovered;
+  }
+}
