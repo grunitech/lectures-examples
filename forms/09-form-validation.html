@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation</title>
+    <meta charset="UTF-8">
+    <style>
+        code, span {
+            font-family: monospace;
+            background: #e3e3e3;
+            padding: 1px;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+<form method="get">
+
+    <h2>Empty value validation</h2>
+    <input type="text" name="n" required>
+
+    <h2>Specific type validation (email)</h2>
+    <input type="email" name="e" required>
+
+    <h2>Pattern based validation (numbers only)</h2>
+    <ul>
+        <li><code>\d+</code></li>
+        <li><code>\d</code> represent any digit</li>
+        <li><code>+</code> represent one or more character</li>
+    </ul>
+    <input type="text" name="p" pattern="\d+" required>
+
+
+    <h2>Pattern based validation (english only)</h2>
+    <ul>
+        <li><span>[a-zA-Z]+</span></li>
+        <li><code>[]</code> group</li>
+        <li><code>a-z</code> all small letters from a to z</li>
+        <li><code>A-Z</code> all capital letters from a to z</li>
+    </ul>
+    <input type="text" name="p" pattern="[a-zA-Z]+" required>
+
+    <h2>Pattern based validation (hebrew only)</h2>
+    <ul>
+        <li><code>[א-ת]+</code></li>
+        <li>Another way is to use UNICODE notation</li>
+        <li>Beit letter: &#1489;</li>
+        <li>Beit letter: ב</li>
+        <li>We can write Aleph to Tav using: <code>[\u05D0-\u05EA]+</code></li>
+    </ul>
+    <input type="text" name="p" pattern="[א-ת]+" required>
+
+    <input type="submit">
+</form>
+</body>
+</html>
