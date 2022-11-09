@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selection</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Select one city:</h1>
+<form method="get">
+
+    <label for="city">Select City</label>
+    <select id="city" name="c">
+        <!-- no value -> label value -->
+        <option>London</option>
+        <option value="t">Tokyo</option>
+        <!-- option can be disabled -->
+        <option value="m" disabled>Moscow</option>
+        <option value="n">New York</option>
+        <!-- selected mark the default selection -->
+        <option value="ta" selected>Tel Aviv</option>
+
+        <!-- grouping -->
+        <optgroup label="israel">
+            <option>Bat Yam</option>
+            <option>Eilat</option>
+        </optgroup>
+    </select>
+
+    <input type="submit">
+</form>
+
+<h1>Select multiple countries:</h1>
+<form method="post">
+
+    <label for="country">Select City</label>
+    <select id="country" name="y" multiple>
+        <option>Israel</option>
+        <option>UK</option>
+        <option>USA</option>
+        <option>Iran</option>
+    </select>
+
+    <input type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input</title>
+    <meta charset="UTF-8">
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Input Types</h1>
+
+<form method="get">
+    <!-- label can contain the element -->
+    <p>
+        <label>Enter your pet name
+            <input type="text" name="pet" value="Good dog">
+        </label>
+    </p>
+    <!-- label can point to id using for -->
+    <p>
+        <label for="city">Enter your city:</label>
+        <input type="text" name="city" id="city">
+    </p>
+
+    <table border="1">
+        <tr>
+            <td>
+                <label for="x">Enter your city:</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="city-x" id="x">
+            </td>
+        </tr>
+    </table>
+
+
+    <p>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass">
+    </p>
+
+    <p>
+        <label for="b">Date of birth:</label>
+        <input type="date" name="b" id="b">
+    </p>
+
+    <p>
+        <label>Email:
+            <input type="email" name="email">
+        </label>
+    </p>
+
+    <p>
+        <label>Age:
+            <input type="number" name="age">
+        </label>
+    </p>
+
+    <p>
+        <label>Favorite Color:
+            <input type="color" name="favorite">
+        </label>
+    </p>
+
+    <p>
+        <label>Range:
+            <input type="range" name="range" min="10" max="100" step="3" value="50">
+        </label>
+    </p>
+
+    <p>
+        <label>File:
+            <input type="file" name="avatar">
+        </label>
+    </p>
+
+    <button type="submit">DONE</button>
+</form>
+</body>
+</html>

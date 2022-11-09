@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Attributes</title>
+    <meta charset="UTF-8">
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>Attributes</h1>
+
+<form method="get">
+    <p>
+        <!-- form is invalid without this value -->
+        <input type="text" name="example-required-text" required>
+    </p>
+    <p>
+        <!-- form is invalid without this value -->
+        <input type="text" name="example-disabled-text" value="disabled-value" disabled>
+        <input type="checkbox" name="example-disabled-text" value="disabled-value" disabled>
+    </p>
+    <p>
+        <input type="text" name="example-readonly-text" value="r-value" readonly>
+    </p>
+
+    <p>
+        <label>Enter your email
+            <input type="email" name="example-place-text" placeholder="example@site.org">
+        </label>
+    </p>
+    <p>
+        <label>
+            <input type="email" name="example-email" placeholder="Enter your email">
+        </label>
+    </p>
+
+    <p>
+        <label>Enter your age
+            <input type="number" name="example-step" placeholder="AGE" step="5">
+        </label>
+    </p>
+    <button type="submit">DONE</button>
+</form>
+</body>
+</html>
