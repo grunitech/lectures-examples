@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submit/Reset</title>
+    <meta charset="UTF-8">
+    <style>
+        input[type="submit"] {
+            border: 1px solid purple;
+            border-radius: 1em;
+            background: aqua;
+        }
+
+        button[type="submit"] {
+            border: 1px solid purple;
+            border-radius: 1em;
+            background: aqua;
+        }
+
+        button[type="submit"] span {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- no action means the same url -->
+<!-- when we are in form element hitting "Enter" is equal to submit -->
+<form method="get">
+    <input type="text" name="name">
+    <input type="text" name="house">
+    <!-- submit and reset can be "input" or "button" -->
+    <p>Input element: <input type="submit" value="Submit ME!"></p>
+    <p>Input/button element: <input type="button" value="Button but not submit"></p>
+    <p>Button element:
+        <button type="submit">
+            <span>ICON</span>
+            IM BUTTON
+        </button>
+    </p>
+
+    <p>Input element: <input type="reset" value="Clean All"></p>
+    <p>Button element:
+        <button type="reset">
+            <span>IM Cleaning Button</span>
+        </button>
+    </p>
+</form>
+</body>
+</html>
