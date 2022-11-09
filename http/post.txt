@@ -1,0 +1,4 @@
+POST /form.html HTTP/1.1
+Host: localhost:8080
+
+<the data of the post include in the request body>

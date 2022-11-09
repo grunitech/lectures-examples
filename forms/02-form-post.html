@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Post</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<!-- this form will request "result.html" with the data in the body (POST) -->
+<!-- target let us choose where to submit the form:
+    _blank - new tab
+    _self, _top, _parent - the current tab
+-->
+<form action="results.html?foo=bar"
+      method="post"
+      target="_self">
+    <input type="text" name="name">
+    <input type="text" name="house">
+    <input type="submit">
+</form>
+</body>
+</html>

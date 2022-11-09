@@ -1,0 +1,17 @@
+GET /form.html HTTP/1.1
+host: localhost
+
+
+// This is example of full HTTP GET request from my browser:
+
+GET /forms/form.html HTTP/1.1
+Host: 127.0.0.1:8080
+If-Modified-Since: Wed, 09 Nov 2022 07:05:18 GMT
+If-None-Match: W/"154559642-132-2022-11-09T07:05:18.518Z"
+Referer: http://127.0.0.1:8080/forms/
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
