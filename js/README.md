@@ -4,5 +4,5 @@
 * Deep Dive
   * JS Internals & V8
   * Events Scheduler
-  * Context
+  * Context & Scope
   * Web APIs & DOM
