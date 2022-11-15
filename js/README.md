@@ -5,4 +5,4 @@
   * JS Internals & V8
   * Events Scheduler
   * Context
-  * Web Technologies & DOM
+  * Web APIs & DOM
