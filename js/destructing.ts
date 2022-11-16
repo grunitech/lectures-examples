@@ -12,6 +12,8 @@ const DATA = {
         }
     }
 }
+    // DATA['key-with-dash'] = 1;
+    // DATA.aaa = 2;
 //                   .(object access)
 //                            [](array access)
 //                               .(object access)
