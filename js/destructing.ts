@@ -26,3 +26,15 @@ console.log(myAge) // 18
 const {country, age} = DATA;
 
 console.log(age) // 18
+
+
+
+
+// Array Destruction
+const ARR = [{}, 18, 'str'];
+const [d, a, s] = ARR;
+
+// i need only the age
+ARR[1];
+const [, sss] = ARR;
+sss; // 18
