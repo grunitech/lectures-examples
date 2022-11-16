@@ -1,10 +1,28 @@
-const a = {
+// Object Destructing
+const DATA = {
     name: 'Gruni',
     age: 18,
-    country: 'IL'
-};
+    country: 'IL',
+    x: 'x',
+    y: 'y',
+    children: [{age: 12}, {age: 13}, {age: 14}],
+    d: {
+        a: {
+            b: 1
+        }
+    }
+}
+//                   .(object access)
+//                            [](array access)
+//                               .(object access)
+const childAge = DATA.children[1].age;
 
-// const age = a.age;
-const {age, name, country} = a;
 
-console.log(age);
+const myName = DATA.name;
+const myAge = DATA.age;
+console.log(myAge) // 18
+
+// destruction
+const {country, age} = DATA;
+
+console.log(age) // 18
