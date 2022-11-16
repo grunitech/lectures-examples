@@ -3,7 +3,39 @@
 <head>
     <title>Javascript</title>
     <meta charset="UTF-8">
+    <script>
+
+        const a = fetch()
+        function showInputInOutput() {
+            const outputElement = document.querySelector('.output');
+            const inputElement = document.querySelector('input');
+
+            outputElement.innerHTML = inputElement.value;
+            // document.querySelector('.output').innerHTML = document.querySelector('input').value;
+        }
+        function onKeyUp(ev /*KeyboardEvent*/) {
+            showInputInOutput()
+            // console.log('Key ', ev.key, ' pressed');
+            // document.querySelector('.output').innerHTML += ev.key;
+        }
+
+        function myApp() {
+            // our application comes here
+            console.log('application loaded');
+            document.querySelector('input').addEventListener('keyup', showInputInOutput);
+        }
+        // main();
+        document.addEventListener('DOMContentLoaded',  myApp);
+    </script>
 </head>
 <body>
+<div>
+    <h1>Input</h1>
+    <input type="text">
+</div>
+<div>
+    <h1>Output</h1>
+    <section class="output"></section>
+</div>
 </body>
 </html>
