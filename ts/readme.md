@@ -3,7 +3,7 @@
 ## Installation
 
 Globally:
-    
+
 ```shell
 npm install typescript -g
 ```
@@ -22,10 +22,14 @@ Default file is `tsconfig.json`
 {
   "compilerOptions": {
     "target": "ES2020",
-    "lib": ["DOM", "ES2021"],
+    "lib": [
+      "DOM",
+      "ES2021"
+    ],
     "watch": true
   }
 }
 ```
 
 * target - the JavaScript version the `.ts` files converted to.
+* lib - the JS we want TypeScript to support in our project
