@@ -24,3 +24,27 @@ function newFooBar(...a: unknown[]) {
 newFooBar(); // a is empty array
 newFooBar(1, ''); // a [1, '']
 newFooBar(1, 2, 3, 43, 5, 65 , 7, 7, 4)
+
+
+function sumAll(...input: number[]) {
+    let sum = 0;
+    for (const i of input) {
+        sum = sum + i;
+    }
+    return sum;
+}
+
+sumAll(); // 0
+sumAll(1, 6); // 7
+sumAll(1, 10, 1); // 12
+
+function anotherSumAll(input: number[]) {
+    let sum = 0;
+    for (const i of input) {
+        sum = sum + i;
+    }
+    return sum;
+}
+
+anotherSumAll([]); // 0
+anotherSumAll([1, 6]); // 7
