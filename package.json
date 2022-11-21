@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server",
+    "build-ts": "tsc ts/hello-world.ts",
     "build-css": "sass css/lists.scss css/lists.css"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/grunitech/lectures-examples#readme",
   "devDependencies": {
-    "sass": "^1.56.0"
+    "sass": "^1.56.0",
+    "typescript": "^4.9.3"
   }
 }
