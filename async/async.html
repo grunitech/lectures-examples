@@ -7,6 +7,31 @@
 <body>
 <h1>Async Examples</h1>
 <button>Click Me!</button>
-<script src="examples.js"></script>
+<button liel="1" id="stam">1</button>
+<button liel="2" id="another">2</button>
+<button>3</button>
+<button><span>4</span></button>
+<!--<script src="examples.js"></script>-->
+<script>
+    function buttonClicked(event) {
+
+        alert(event.target.getAttribute('id'));
+    }
+
+    const buttons = document.querySelectorAll('button');
+    for (const btn of buttons) {
+        btn.addEventListener('click', () => {
+            alert(btn.getAttribute('liel'));
+        });
+    }
+
+    document.querySelector('button').addEventListener('click', () => {
+        alert('clicked');
+    })
+    // console.log('start');
+    // const x = window.confirm('are you sure?');
+    // console.log('end', x);
+</script>
 </body>
 </html>
+x
