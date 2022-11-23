@@ -10,8 +10,6 @@ const f2 = async () => {
 };
 
 
-
-
 // this function will update header & article
 function update(header: string, article: string) {
     (document.querySelector('h1') as Element).innerHTML = header;
@@ -61,7 +59,6 @@ document.querySelector('button').addEventListener('click', () => {
 });
 
 
-
 // Liel - great q about multi-return value
 function acceptString(s: string) {
     console.log(s);
@@ -108,7 +105,7 @@ const matan: any = {
 };
 
 // I want to check that gaz exists
-if (matan.foo ) {
+if (matan.foo) {
     if (matan.foo.bar && matan.foo.bar.gaz) {
         // Aurika!!!
     }

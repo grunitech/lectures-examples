@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .foo {
+
+        }
+
+        .foo button {
+            color: red;
+        }
+
+        .bar {
+
+        }
+
+        .bar button {
+            color: green;
+        }
+    </style>
+    <script>
+        function changeLayout() {
+            const cls = Array.from(document.body.classList);
+            if (cls.includes('foo')) {
+                document.body.classList.remove('foo');
+                document.body.classList.add('bar');
+            } else {
+                document.body.classList.remove('bar');
+                document.body.classList.add('foo');
+            }
+        }
+    </script>
+</head>
+<body class="foo">
+<button onclick="changeLayout()">Calculate</button>
+</body>
+</html>
