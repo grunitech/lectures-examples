@@ -1,0 +1,11 @@
+// 1 + 2 * 3 + 1
+
+x = 1
+operator = +
+y = 2
+
+x = 3
+operator = *
+y = 3
+
+
